@@ -1,10 +1,11 @@
-# lo
+# `lo`
 
-Latexoptimizer (lo) helps you speeds up your local latex compilation while writing. Large figures slow you down. `latexoptimizer` replaces all figures with symbolic links to a tiny placeholder image. Every now and then when you want to render the actual project, you can easily switch to the actual figures and recompile.
+Latexoptimizer (`lo`) helps you speeds up your local latex compilation while writing. Large figures slow you down. `lo` replaces all figures with symbolic links to a tiny placeholder image. Every now and then when you want to render the actual project, you can easily switch to the actual figures and recompile.
 
 ## Getting Started
 
-- `lo init` creates a hidden folder, finds all png files in your latex project, and moves them there. It then creates a placeholder image and symlinks all original filenames to that placeholder image
+- clone this repo and run `cargo install --path .` 
+- `lo init` creates a hidden folder, finds all image files in your latex project, and moves them there. It then creates a placeholder image and symlinks all original filenames to that placeholder image
 - `lo update` run this whenever you add a new image file. it will add it to its hidden collection and replace it with a placeholder
 - `lo switch` removes the symlinks and replaces them with the actual files, and vice verca
 
